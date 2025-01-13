@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e717b0dfa1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!--Nav-->
+    <div class="Navigation">
+      <h3 class="fontSize NavLeftMainContainer">
+        <a class="textDecoration hh" href=""
+          >Hlaing Htate Htar <i class="fa-solid fa-person-dress"></i
+        ></a>
+      </h3>
+      <div class="NavRightMainContainer">
+        <div class="Cart">
+          <div class="textDecoration">
+            <i class="fa-solid fa-cart-shopping cartBtn"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainContainer">
+      <!--have to remove-->
+      <div class="cartDisplay">
+        <div class="xMark">
+          <button class="xMarkBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <!-- have to hide-->
+        <div class="outterCartDisplay">
+          <div class="innerCartDisplay" id="one">
+            <div class="name--Price">
+              <div class="name">
+                <h3 class="textDecoration">Product Name</h3>
+              </div>
+              <div class="price">
+                <h3 class="textDecoration priceMargin">Price</h3>
+              </div>
+            </div>
+            <h1 class="hidden paymentAlert">Payment Successful!</h1>
+            <div class="total--totalPrice">
+              <div class="total">
+                <h3 class="textDecoration totalMargin">Total</h3>
+              </div>
+              <div class="totalPrice">
+                <h3 class="priceColor textDecorationForTotal">0MMK</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="loginHolder" id="two">
+            <!--Login-->
+            <input
+              class="input inputForLoginUser"
+              id="input"
+              type="email"
+              placeholder="Username..."
+            />
+            <input
+              class="input inputForLoginPassword"
+              id="input"
+              type="password"
+              placeholder="Password..."
+            />
+            <button class="enterBtn enterBtnForLogin">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <!--Resgister Link-->
+            <span onclick="linkAndBack()">
+              <div class="registerDiv">
+                <div class="registerText">
+                  if you don't have an account , please click this link to
+                  create!
+                </div>
+              </div>
+              <button class="backKey enterBtn enterBtnForLogin">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </span>
+            <!--Display-->
+            <div class="displayAmount">
+              <!--Display User-->
+              <div class="bankingUserName"></div>
+              <!--Display Amount-->
+              <div class="amountHolder">
+                <div class="amount">Amount</div>
+                <div class="amountPrice">0k</div>
+              </div>
+              <!--Adding Money-->
+              <div class="amountHolder">
+                <div class="add">Add</div>
+                <div>
+                  <input class="addMoney" type="email" placeholder="Amount" />
+                  <button class="enterBtnForAdd">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+              <!--Transfering Money-->
+              <div class="transferHolder">
+                <div class="add">Transfer</div>
+                <div>
+                  <input
+                    class="inputForTransfer"
+                    type="email"
+                    placeholder="Username..."
+                  />
+                  <div>
+                    <input
+                      class="addMoney addMoneyForTransfer"
+                      type="email"
+                      placeholder="Amount"
+                    />
+                    <button class="enterBtnForAdd enterBtnForTransfer">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="totalAmount">
+                <div class="add">Total Amount</div>
+                <div class="totalHolder">
+                  <div
+                    class="addMoney totalAmountHolder"
+                    id="totalAmountHolder"
+                  >
+                    0k
+                  </div>
+                  <button class="buyBtn">BUY</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="displayRegister">
+              <!--Welcome-->
+              <div class="bankingUserName">Welcome</div>
+              <!--Create User-->
+              <div class="registerNameHolder">
+                <div class="amount">Create an Username</div>
+                <input
+                  class="input inputForCreatingUser"
+                  type="email"
+                  placeholder="Username..."
+                />
+              </div>
+              <!--Create Pass-->
+              <div class="registerNameHolder">
+                <div class="amount">Create an Password</div>
+                <div>
+                  <input
+                    class="input inputForCreatingPass"
+                    type="password"
+                    placeholder="Password..."
+                  />
+                  <span class="eyes" onclick="eye()">
+                    <i id="hide1" class="fa fa-eye"></i>
+                    <i id="hide2" class="fa fa-eye-slash"></i>
+                  </span>
+                </div>
+              </div>
+              <!--Confirm Pass-->
+              <div class="registerNameHolder">
+                <div class="amount">Confirm Your Password</div>
+                <div>
+                  <input
+                    class="input inputForCreatingPass2"
+                    type="password"
+                    placeholder="Password..."
+                  />
+                </div>
+              </div>
+              <!--Add Amount-->
+              <div class="registerNameHolder">
+                <div class="amount">Deposit Your Amount</div>
+                <input
+                  class="input inputForCreatingPass amountForRegister"
+                  type="email"
+                  placeholder="Amount"
+                />
+              </div>
+              <!--Create Btn-->
+              <div class="registerNameHolder">
+                <button class="createAccBtn amount">Create an Account</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secmainContainer">
+        <div>
+          <div class="container">
+            <input
+              class="searchBar"
+              type="email"
+              placeholder="Search Products..."
+            />
+            <div class="searchBarResult"></div>
+          </div>
+          <div class="searchResult">
+            <!--img1-->
+
+            <div id="img1" class="mainImageHolder">
+              <div>
+                <img class="img" src="images/img1.jpg" alt="" />
+              </div>
+              <div class="spilter"></div>
+              <div class="mainBtnHolder">
+                <div class="btnLeft">25000 K</div>
+                <button class="btnRight">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+            <!--img2-->
+            <div id="img2" class="mainImageHolder">
+              <div>
+                <img class="img" src="images/img2.jpg" alt="" />
+              </div>
+              <div class="spilter"></div>
+              <div class="mainBtnHolder">
+                <div class="btnLeft">25000 K</div>
+                <button class="btnRight">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+            <!--img3-->
+            <div id="img3" class="mainImageHolder">
+              <div>
+                <img class="img" src="images/img3.jpg" alt="" />
+              </div>
+              <div class="spilter"></div>
+              <div class="mainBtnHolder">
+                <div class="btnLeft">18000 K</div>
+                <button class="btnRight">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+            <!--img4-->
+            <div id="img4" class="mainImageHolder">
+              <div>
+                <img class="img" src="images/img4.jpg" alt="" />
+              </div>
+              <div class="spilter spilter2"></div>
+              <div class="mainBtnHolder">
+                <div class="btnLeft">18000 K</div>
+                <button class="btnRight">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+            <!--img5-->
+            <div id="img5" class="mainImageHolder">
+              <div>
+                <img class="img" src="images/img5.jpg" alt="" />
+              </div>
+              <div class="spilter"></div>
+              <div class="mainBtnHolder">
+                <div class="btnLeft">18000 K</div>
+                <button class="btnRight">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+            <!--img6-->
+            <div id="img6" class="mainImageHolder">
+              <div>
+                <img class="img" src="images/img6.jpg" alt="" />
+              </div>
+              <div class="spilter"></div>
+              <div class="mainBtnHolder">
+                <div class="btnLeft">18000 K</div>
+                <button class="btnRight">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+            <!--img7-->
+            <div id="img7" class="mainImageHolder">
+              <div>
+                <img class="img" src="images/img7.jpg" alt="" />
+              </div>
+              <div class="spilter"></div>
+              <div class="mainBtnHolder">
+                <div class="btnLeft">18000 K</div>
+                <button class="btnRight">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+            <!--img8-->
+            <div id="img8" class="mainImageHolder">
+              <div>
+                <img class="img" src="images/img8.jpg" alt="" />
+              </div>
+              <div class="spilter"></div>
+              <div class="mainBtnHolder">
+                <div class="btnLeft">18000 K</div>
+                <button class="btnRight">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="finalDisplay">
+          <div class="btnLeft pageLink">Page link</div>
+          <div>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="finalDisplay">
+          <div class="btnLeft pageLink marginForPh">Ph Number</div>
+          <div>
+            <div class="btnLeft pageLink">09740996762</div>
+          </div>
+        </div>
+        <div class="finalDisplay">
+          <div class="btnLeft pageLink marginForGmail">Gmail</div>
+          <div>
+            <div class="btnLeft pageLink">lolsai662@gmail.com</div>
+          </div>
+        </div>
+        <div class="displayInfo">
+          <a
+            class="textDecoration fontColor"
+            href="https://daringcities.org/cookie-policy/?gad_source=1&gclid=Cj0KCQjwxqayBhDFARIsAANWRnSac4gL5EqHZdVOx0p2xIcy0XI857WhoZ_ouGk51kcqJVl85nzFWlcaAsqeEALw_wcB"
+            >Cookie Policy</a
+          >
+        </div>
+        <div class="displayInfo">
+          <a
+            class="textDecoration fontColor"
+            href="https://www.essentialneed.org/privacy-policy?gad_source=1&gclid=Cj0KCQjwxqayBhDFARIsAANWRnQptdET7I2V9eTTAibjaoBjMdnKMAwyR2gvJMQ2jtTB6490ZaxGbawaAmhcEALw_wcB"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="displayInfo">
+          <a
+            class="textDecoration fontColor terms"
+            href="https://www.essentialneed.org/privacy-policy?gad_source=1&gclid=Cj0KCQjwxqayBhDFARIsAANWRnQptdET7I2V9eTTAibjaoBjMdnKMAwyR2gvJMQ2jtTB6490ZaxGbawaAmhcEALw_wcB"
+            >Terms and Conditions</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script defer src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1060 @@
+/* navigation */
+.Navigation {
+  background-color: #6b9d4a;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.fontSize {
+  font-family: roboto;
+}
+
+.textDecoration {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.NavLeftMainContainer {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.NavRightMainContainer {
+  margin-right: 20px;
+}
+
+.Login {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.Cart {
+  margin-left: 10px;
+  margin-right: 20px;
+
+  margin-top: 35px;
+}
+
+.cartBtn {
+  font-size: 30px;
+  color: white;
+}
+
+.cartBtn:hover {
+  color: #cfe2ce;
+  transition: 0.3s;
+}
+/* for moblie */
+.searchBar {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: solid 1px gray;
+  padding: 10px;
+}
+
+.searchResult {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 20px auto 0 auto;
+  width: 320px;
+  grid-template-areas:
+    'img1'
+    'img2'
+    'img3'
+    'img4 '
+    'img5'
+    'img6'
+    'img7'
+    'img8'
+    'img9';
+  grid-gap: 20px;
+  grid-auto-rows: minmax(400px, auto);
+}
+
+.mainImageHolder {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: white;
+}
+
+.img {
+  width: 260px;
+  margin: 20px 30px 0 30px;
+}
+
+.mainContainer {
+  position: relative;
+}
+.cartDisplay {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.xMark {
+  display: flex;
+  justify-content: end;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.xMarkBtn {
+  border-radius: 20px;
+  width: 30px;
+  border: solid 1px white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.innerCartDisplay {
+  margin: 40px auto 0 auto;
+}
+
+.name--Price {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.name {
+  width: 150px;
+}
+
+.priceColor {
+  color: green;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.minusBtn {
+  margin-top: 8px;
+  margin-left: -10px;
+  width: 40px;
+  height: 30px;
+  border-radius: 50px;
+  border: 1px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.totalPrice {
+  margin-top: -34px;
+  margin-left: 90px;
+}
+
+.total--totalPrice {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+  margin: 0 auto 10px auto;
+}
+
+.textDecorationForTotal {
+  margin-top: 35px;
+  margin-right: 40px;
+}
+
+.textDecorationForProduct {
+  margin: 17px 0;
+}
+
+.textDecorationForPrice {
+  margin: 10px 0;
+}
+
+.priceMargin {
+  margin-bottom: 40px;
+}
+
+.miniDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 22px;
+}
+
+.totalMargin {
+  margin-left: 50px;
+}
+
+.imgForSearchBar {
+  width: 50px;
+  height: 50px;
+}
+
+.titleForSearchBar {
+  font-family: roboto;
+  font-weight: 500;
+}
+
+.mainContainerForSearchBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid gray;
+}
+
+.container {
+  max-width: 340px;
+}
+
+.searchBarResult {
+  width: 316px;
+  height: auto;
+  margin: 0 auto;
+  position: absolute;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.info {
+  background-color: #6b9d4a;
+  height: 290px;
+}
+
+.finalDisplay {
+  padding-top: 20px;
+  justify-content: space-between;
+  display: flex;
+  width: 80%;
+  margin-left: 40px;
+}
+
+.fa-facebook {
+  color: white;
+  font-size: 30px;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.pageLink {
+  color: white;
+}
+
+.displayInfo {
+  margin-top: 20px;
+
+  margin-left: 40px;
+}
+
+.fontColor {
+  color: white;
+}
+
+.fontColor:hover {
+  color: #76ca71;
+}
+.terms {
+  margin-bottom: 100px;
+}
+
+.loginHolder {
+  margin-top: 50px;
+}
+
+.input {
+  border-radius: 10px;
+  height: 40px;
+  border: 2px solid #cfe2ce;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#input {
+  margin-left: 100px;
+}
+
+.enterBtn {
+  margin-left: 150px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid #cfe2ce;
+  width: 100px;
+  height: 35px;
+  background-color: #cfe2ce;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.backKey {
+  margin-left: 10px;
+  display: none;
+  width: 70px;
+}
+
+.registerDiv {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 1000;
+}
+
+.registerText {
+  text-decoration: none;
+  color: #1f51ff;
+  cursor: pointer;
+}
+
+.displayAmount {
+  margin: 15px auto 0 auto;
+  border-radius: 30px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  display: none;
+  width: 90%;
+}
+
+.bankingUserName {
+  font-family: roboto;
+  font-weight: 600;
+  font-size: 20px;
+  color: #205374;
+}
+
+.amountHolder {
+  display: flex;
+  justify-content: space-around;
+  background-color: #3684ad;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.amount {
+  font-family: roboto;
+  font-weight: 500;
+  color: #142850;
+  font-size: 20px;
+}
+
+.amountPrice {
+  font-size: 20px;
+  font-weight: 800;
+  color: green;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+}
+
+.add {
+  font-family: roboto;
+  font-weight: 500;
+  color: #142850;
+  font-size: 20px;
+  width: 72px;
+}
+
+.addMoney {
+  font-size: 20px;
+  font-weight: 800;
+  color: green;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+  height: 30px;
+  border: 1px solid white;
+}
+
+.enterBtnForAdd {
+  margin-left: 5px;
+  border-radius: 10px;
+  border: 2px solid #cfe2ce;
+  width: 60px;
+  height: 26px;
+  background-color: #cfe2ce;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.enterBtnForAdd:hover {
+  background-color: #76ca71;
+}
+
+.transferHolder {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0197af;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.inputForTransfer {
+  border-radius: 10px;
+  width: 219px;
+  height: 35px;
+  border: 2px solid #cfe2ce;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.totalAmountHolder {
+  width: 200px;
+  margin-bottom: 10px;
+  height: 40px;
+  border: 2px solid #3684ad;
+}
+
+.buyBtn {
+  border-radius: 10px;
+  border: 2px solid #cfe2ce;
+  color: #142850;
+  font-weight: 700;
+  width: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #cfe2ce;
+  margin: 0 auto;
+}
+
+.buyBtn:hover {
+  background-color: #76ca71;
+}
+
+.totalHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  margin-top: 5px;
+}
+
+.totalAmount {
+  display: flex;
+  justify-content: space-around;
+}
+
+.displayRegister {
+  margin: 15px auto 0 auto;
+  border-radius: 30px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  display: none;
+  width: 90%;
+}
+
+.registerNameHolder {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.eyes {
+  position: absolute;
+}
+
+.fa {
+  margin-left: 5px;
+}
+
+#hide1 {
+  display: none;
+  margin-top: 12px;
+}
+
+#hide2 {
+  margin-top: 12px;
+}
+
+.amountForRegister {
+  color: green;
+  width: 210px;
+  font-weight: 800;
+}
+
+.createAccBtn {
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 2px solid #cfe2ce;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #cfe2ce;
+  height: 40px;
+}
+
+.createAccBtn:hover {
+  background-color: #76ca71;
+  color: white;
+}
+
+.paymentAlert {
+  font-family: roboto;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  color: #00afb9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  height: 100px;
+  align-items: center;
+  width: 80%;
+  margin: 100px auto 0 auto;
+}
+
+/* For desktop */
+@media screen and (min-width: 1260px) {
+  .searchResult {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1250px;
+    margin: 30px auto 0 auto;
+    grid-gap: 20px;
+    grid-template-areas:
+      'img1 img2 img3 img4'
+      'img5 img6 img7 img8';
+
+    grid-auto-rows: minmax(400px, auto);
+    margin-bottom: 100px;
+  }
+
+  .searchBar {
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: solid 1px gray;
+    padding: 10px;
+  }
+
+  .mainImageHolder {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: white;
+  }
+
+  .img {
+    width: 260px;
+    margin: 20px 20px 0 20px;
+  }
+
+  .mainContainer {
+    position: relative;
+  }
+  .cartDisplay {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    display: none;
+  }
+
+  .xMark {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+
+  .xMarkBtn {
+    border-radius: 20px;
+    width: 30px;
+    border: solid 1px white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .outterCartDisplay {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .innerCartDisplay {
+    width: 50%;
+    height: auto;
+    margin: 40px 0 0 20px;
+    border-radius: 30px;
+  }
+
+  .loginHolder {
+    margin-top: 40px;
+  }
+
+  .input {
+    border-radius: 10px;
+    height: 40px;
+    border: 2px solid #cfe2ce;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-left: 5px;
+  }
+
+  #input {
+    margin-left: 0px;
+  }
+
+  .enterBtn {
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 2px solid #cfe2ce;
+    width: 60px;
+    height: 35px;
+    background-color: #cfe2ce;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .enterBtn:hover {
+    background-color: #76ca71;
+  }
+
+  .registerDiv {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 1000;
+  }
+
+  .registerText {
+    text-decoration: none;
+    color: #1f51ff;
+    cursor: pointer;
+  }
+
+  .name--Price {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 90%;
+    margin: 30px auto 0 auto;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+  }
+
+  .priceColor {
+    color: green;
+    font-weight: 700;
+    padding-right: 20px;
+  }
+
+  .total--totalPrice {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .minusBtn {
+    margin-left: 10px;
+    width: 50px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .name {
+    width: auto;
+  }
+
+  .textDecorationForProduct {
+    margin-bottom: 29px;
+  }
+
+  .miniDiv {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .textDecorationForTotal {
+    margin-top: 40px;
+    margin-right: -0px;
+  }
+
+  .priceMargin {
+    margin-bottom: 0;
+  }
+
+  .totalMargin {
+    margin-left: 0px;
+  }
+
+  .searchBarResult {
+    width: 500px;
+    height: auto;
+
+    margin: 0 auto;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+
+  .container {
+    max-width: 520px;
+  }
+
+  .mainContainerForSearchBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid gray;
+  }
+
+  .titleForSearchBar {
+    font-family: roboto;
+    font-weight: 500;
+  }
+
+  .imgForSearchBar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .displayAmount {
+    margin-top: 15px;
+    border-radius: 30px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    display: none;
+  }
+
+  .bankingUserName {
+    font-family: roboto;
+    font-weight: 600;
+    font-size: 20px;
+    color: #205374;
+  }
+
+  .amountHolder {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3684ad;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+
+  .amount {
+    font-family: roboto;
+    font-weight: 500;
+    color: #142850;
+    font-size: 20px;
+  }
+
+  .amountPrice {
+    font-size: 20px;
+    font-weight: 800;
+    color: green;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+  }
+
+  .add {
+    font-family: roboto;
+    font-weight: 500;
+    color: #142850;
+    font-size: 20px;
+    width: 72px;
+  }
+
+  .addMoney {
+    font-size: 20px;
+    font-weight: 800;
+    color: green;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    border: 1px solid white;
+  }
+
+  .enterBtnForAdd {
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 2px solid #cfe2ce;
+    width: 60px;
+    height: 26px;
+    background-color: #cfe2ce;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .enterBtnForAdd:hover {
+    background-color: #76ca71;
+  }
+
+  .transferHolder {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0197af;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+
+  .inputForTransfer {
+    border-radius: 10px;
+    width: 219px;
+    height: 35px;
+    border: 2px solid #cfe2ce;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .totalAmountHolder {
+    width: 200px;
+    margin-bottom: 10px;
+    height: 40px;
+    border: 2px solid #3684ad;
+  }
+
+  .buyBtn {
+    border-radius: 10px;
+    border: 2px solid #cfe2ce;
+    color: #142850;
+    font-weight: 700;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #cfe2ce;
+    margin: 0 auto;
+  }
+
+  .buyBtn:hover {
+    background-color: #76ca71;
+  }
+
+  .totalHolder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .total {
+    margin-top: 5px;
+  }
+
+  .totalAmount {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .displayRegister {
+    margin-top: 15px;
+    border-radius: 30px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    display: none;
+  }
+
+  .registerNameHolder {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .eyes {
+    position: absolute;
+  }
+
+  .fa {
+    margin-left: 5px;
+  }
+
+  #hide1 {
+    display: none;
+    margin-top: 12px;
+  }
+
+  #hide2 {
+    margin-top: 12px;
+  }
+
+  .amountForRegister {
+    color: green;
+    width: 210px;
+    font-weight: 800;
+  }
+
+  .createAccBtn {
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 2px solid #cfe2ce;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #cfe2ce;
+    height: 40px;
+  }
+
+  .createAccBtn:hover {
+    background-color: #76ca71;
+    color: white;
+  }
+
+  .backKey {
+    display: none;
+  }
+
+  .paymentAlert {
+    font-family: roboto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: #00afb9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    height: 100px;
+    align-items: center;
+    width: 80%;
+    margin: 100px auto 0 auto;
+  }
+
+  .info {
+    background-color: #6b9d4a;
+    height: 290px;
+  }
+
+  .finalDisplay {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+  }
+
+  .fa-facebook {
+    color: white;
+    font-size: 30px;
+  }
+
+  .fa-facebook:hover {
+    color: #3b5998;
+  }
+
+  .pageLink {
+    color: white;
+  }
+
+  .marginForPh {
+    margin-left: 30px;
+  }
+
+  .marginForGmail {
+    margin-left: 50px;
+  }
+
+  .displayInfo {
+    margin-top: 20px;
+    width: 30%;
+    margin-left: 190px;
+  }
+
+  .fontColor {
+    color: white;
+  }
+
+  .fontColor:hover {
+    color: #76ca71;
+  }
+  .terms {
+    margin-bottom: 100px;
+  }
+}
+
+#img1 {
+  grid-area: img1;
+}
+
+#img2 {
+  grid-area: img2;
+}
+
+#img3 {
+  grid-area: img3;
+}
+
+#img4 {
+  grid-area: img4;
+}
+
+#img5 {
+  grid-area: img5;
+}
+
+#img6 {
+  grid-area: img6;
+}
+
+#img7 {
+  grid-area: img7;
+}
+
+#img8 {
+  grid-area: img8;
+}
+
+.secmainContainer {
+  padding: 20px;
+  background-image: url(images/f75cd5c75cbbf51d4ecb686a9bb01c1c.jpg);
+}
+
+.mainBtnHolder {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px 0 30px;
+  padding-bottom: 10px;
+}
+
+.btnLeft {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.btnRight {
+  width: 40px;
+  border-radius: 5px;
+  border: solid 1px white;
+}
+.spilter {
+  border: 0.5px solid black;
+  margin: 20px auto 10px auto;
+  width: 80%;
+}
+
+.spilter2 {
+  border: 0.5px solid black;
+  margin: 15px auto 10px auto;
+  width: 80%;
+}
+
+.mainImageHolder:hover {
+  border: solid 2px #044553;
+}
+
+.display {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.hh {
+  font-family: dancing script;
+  color: white;
+}
